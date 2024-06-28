@@ -13,7 +13,7 @@ public class LabelText1 {
 		driver.manage().window().maximize();
 		WebElement label=driver.findElement(By.xpath("//span[text()='to continue to Gmail']"));
 		String actualLabelValue=label.getText();
-		
+		System.out.println("Done");
 		String expectedLabelValue="to continue to Gmail";
 		if(actualLabelValue.equals(expectedLabelValue))
 		{
